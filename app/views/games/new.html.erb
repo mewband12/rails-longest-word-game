@@ -4,10 +4,42 @@
     <meta charset="utf-8" />
     <title>App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/stylesheets/application.css">
 </head>
 <body>
   <h1>New game</h1>
-  <p><%= @letters  %></p>
+  <div class="random">
+    <div class="card">
+      <p class ="test"><%= @letters[0]  %></p>
+    </div>
+    <div class="card">
+      <p class ="test"><%= @letters[1]  %></p>
+    </div>
+    <div class="card">
+      <p class ="test"><%= @letters[2]  %></p>
+    </div>
+    <div class="card">
+      <p class ="test"><%= @letters[3]  %></p>
+    </div>
+    <div class="card">
+      <p class ="test"><%= @letters[4]  %></p>
+    </div>
+    <div class="card">
+      <p class ="test"><%= @letters[5]  %></p>
+    </div>
+    <div class="card">
+      <p class ="test"><%= @letters[6]  %></p>
+    </div>
+    <div class="card">
+      <p class ="test"><%= @letters[7]  %></p>
+    </div>
+    <div class="card">
+      <p class ="test"><%= @letters[8]  %></p>
+    </div>
+    <div class="card">
+      <p class ="test"><%= @letters[9]  %></p>
+    </div>
+  </div>
   <p>What is the longest word you can find?</p>
   <form action="/score" method="post">
     <input type="text" name="new" value= "<%= params[:new] %>" id ="form1">
